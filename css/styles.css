@@ -211,7 +211,7 @@ a {
 .btn {
 	font-size: 1.8rem;
 	font-weight: 600;
-	padding: 2rem 3rem;
+	padding: 2rem 4vw;
 	text-transform: uppercase;
 	text-align: center;
 	border: 0;
@@ -303,7 +303,6 @@ a {
 	outline: 0;
 	color: var(--headings-color);
 	font-size: 2rem;
-	min-width: 16rem;
 }
 
 ::placeholder {
@@ -320,6 +319,7 @@ a {
 	border: 0;
 	flex-grow: 1;
 	padding: 1.5rem 2rem;
+	width: 0;
 }
 
 .input-group .btn {
@@ -499,6 +499,7 @@ a {
 @media screen and (min-width: 1024px) {
 	.quote {
 		font-size: 2rem;
+		line-height: 1.5;
 	}
 
 	.quote__author {
@@ -776,8 +777,9 @@ a {
 }
 
 .block-domain__prices {
+	color: var(--headings-color);
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 6rem);
 	font-size: 2rem;
 	font-weight: 600;
